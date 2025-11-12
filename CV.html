@@ -57,14 +57,61 @@
     overflow:hidden;
   }
 
-  .photo {
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    overflow:hidden;
-    border:6px solid rgba(14,165,164,0.12);
-    display:inline-block;
-    vertical-align:middle;
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yes King</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    .photo {
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 35px rgba(255,255,255,0.4);
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Yes King</h1>
+  <div class="photo">
+    <img src="8c4bae0c-942a-4329-948a-270ac988d83a.png" alt="Photo de Yes King">
+  </div>
+
+</body>
+</html>
+
   }
   .name {
     display:flex;
